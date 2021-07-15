@@ -1,0 +1,15 @@
+{
+  "name": "cma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cma_playground.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "contentful": "^8.4.2",
+    "contentful-management": "^7.28.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
