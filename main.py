@@ -18,9 +18,12 @@ def main():
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(fields)
         cts = getContentTypes()
+
+        print("Found " + str(len(cts)) + " content types...")
+
         for ct in cts:
             entries = getEntries(ct)
-            print(f"{ct}:", len(entries))
+            # print(f"{ct}:", len(entries))
             rows = [SPACE_ID, ct, len(entries)]    
             csvwriter.writerow(rows)
 
@@ -67,3 +70,4 @@ def getEntries(content_type):
 
 if __name__ == "__main__":
     main()
+    
