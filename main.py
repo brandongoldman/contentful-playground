@@ -35,6 +35,7 @@ def getContentTypes():
         f"https://{DOMAIN}/spaces/{SPACE_ID}/environments/{ENV_ID}/content_types",
         params={
             "access_token": ACCESS_TOKEN,
+            "limit": 1000
         },
     ).json()
 
